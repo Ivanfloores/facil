@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Questions: Ivan's Facilitation, The Artist's Way pg: 151-161</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            color: #444;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #fff, #f9f9f9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+        h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: glow 2s ease infinite alternate;
+        }
+        h2 {
+            font-size: 28px;
+            color: #666;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            animation: pulse 1s ease infinite alternate;
+        }
+        .topic {
+            margin-bottom: 50px;
+            animation: slideUp 1s ease;
+        }
+        .question {
+            margin-bottom: 25px;
+            text-align: left;
+            animation: fadeIn 1s ease;
+        }
+        p {
+            font-size: 18px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Keyframe animations */
+        @keyframes glow {
+            from {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            to {
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="container">
+
+    <h1>Ivan's Facilitation, The Artist's Way pg: 151-161</h1>
+
+    <button class="button" onclick="showTopic('topic1')">Show Topic 1</button>
+
+    <div class="topic" id="topic1" style="display: none;">
+        <h2>Topic 1: Recognizing and Addressing Blocks to Creativity</h2>
+        <p>The book talked about this recognizing and addressing blocks to creativity, pick one of the following questions to discuss then move onto the next question.</p>
+        <div class="question">
+            <p>1. How do you personally distinguish between laziness and fear when it comes to creative endeavors?</p>
+        </div>
+        <div class="question">
+            <p>2. Reflecting on your own experiences, how have childhood influences impacted your creative pursuits?</p>
+        </div>
+        <div class="question">
+            <p>3. In what ways can guilt hinder creative expression, and how might one overcome it?</p>
+        </div>
+        <div class="question">
+            <p>4. Share a personal anecdote about a time when fear blocked your creativity. How did you eventually overcome it?</p>
+        </div>
+        <div class="question">
+            <p>5. What strategies do you find most effective in dismantling emotional blocks and fostering renewed creativity?</p>
+        </div>
+    </div>
+
+    <button class="button" onclick="showTopic('topic2')">Show Topic 2</button>
+
+    <div class="topic" id="topic2" style="display: none;">
+        <h2>Topic 2: Cultivating Enthusiasm in Creative Pursuits</h2>
+        <p class="instruction">The book talked about this cultivating enthusiasm in creative pursuits, pick one of the following questions to discuss then move onto the next question.</p>
+        <div class="question">
+            <p>Discuss the difference between discipline and enthusiasm in the context of artistic endeavors.</p>
+        </div>
+        <div class="question">
+            <p>1. How does the concept of play contribute to maintaining enthusiasm in creative work?</p>
+        </div>
+        <div class="question">
+            <p>2. Share examples of how you integrate playfulness into your creative process.</p>
+        </div>
+        <div class="question">
+            <p>3. Do you agree with the idea that enthusiasm is grounded in spiritual commitment? Why or why not?</p>
+        </div>
+        <div class="question">
+            <p>4. How can artists maintain enthusiasm for their work during challenging times?</p>
+        </div>
+    </div>
+
+    <button class="button" onclick="showTopic('topic3')">Show Topic 3</button>
+
+    <div class="topic" id="topic3" style="display: none;">
+        <h2>Topic 3: Overcoming Creative U-Turns and Self-Sabotage</h2>
+        <p>The book talked about this overcoming creative u-turns and self-sabotage, pick one of the following questions to discuss then move onto the next question.</p>
+        <div class="question">
+            <p>1. Have you ever experienced a creative U-turn? If so, what triggered it and how did you navigate through it?</p>
+        </div>
+        <div class="question">
+            <p>2. What role does fear play in self-sabotage, and how can artists address this fear effectively?</p>
+        </div>
+        <div class="question">
+            <p>3. Share strategies for recovering from setbacks and maintaining momentum in creative projects?</p>
+        </div>
+        <div class="question">
+            <p>4. How can artists differentiate between constructive criticism and self-defeating thoughts?</p>
+        </div>
+        <div class="question">
+            <p>5. Reflect on a time when you overcame self-sabotage. What lessons did you learn from that experience?</p>
+        </div>
+    </div>
+
+    <button class="button" onclick="showTopic('topic4')">Show Topic 4</button>
+
+    <div class="topic" id="topic4" style="display: none;">
+        <h2>Topic 4: Blasting Through Creative Blocks</h2>
+        <p>The book talked about this blasting through creative blocks, pick one of the following questions to discuss then move onto the next question.</p>
+        <div class="question">
+            <p>Discuss the significance of addressing resentment and fear in overcoming creative blocks.</p>
+        </div>
+        <div class="question">
+            <p>1. How do buried barriers and unconscious payoffs contribute to creative resistance?</p>
+        </div>
+        <div class="question">
+            <p>2. Share examples of artistic defenses you've encountered in yourself or others?</p>
+        </div>
+        <div class="question">
+            <p>3. How can artists create a supportive environment for their creative selves to thrive?</p>
+        </div>
+        <div class="question">
+            <p>4. Reflect on the exercise of asking yourself what you stand to gain by not pursuing a creative endeavor. What insights did you gain from this exercise?</p>
+        </div>
+    </div>
+
+    <button class="button" onclick="showTopic('topic5')">Show Topic 5</button>
+
+    <div class="topic" id="topic5" style="display: none;">
+        <h2>Topic 5: Tasks for Creative Growth</h2>
+        <p>The book talked about this tasks for creative growth, pick one of the following questions to discuss then move onto the next question.</p>
+        <div class="question">
+            <p>1. How has the practice of morning pages impacted your creative process and self-awareness?</p>
+        </div>
+        <div class="question">
+            <p>2. Share your experience with visualizing your creative goals. Did it affect your motivation or approach to your work?</p>
+        </div>
+        <div class="question">
+            <p>3. Discuss the importance of setting creative goals for different time frames (yearly, monthly, weekly).</p>
+        </div>
+        <div class="question">
+            <p>4. Reflect on the process of forgiveness and its role in overcoming creative setbacks.</p>
+        </div>
+        <div class="question">
+            <p>5. Share strategies for staying committed to your creative goals, especially during times of resistance or self-doubt.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function showTopic(topicId) {
+        var topic = document.getElementById(topicId);
+        topic.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
